@@ -1,15 +1,7 @@
-<img align="left" alt="codeSTACKr's GitHub Stats" src="https://github-readme-stats.codestackr.vercel.app/api?username=estrellajm&show_icons=true&hide_border=true&count_private=true" />
-
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=estrellajm&layout=compact)](https://github.com/estrellajm/github-readme-stats)
-
----
-
 ## Hi there, I'm Jose
 [![Twitter Follow](https://img.shields.io/twitter/follow/estrellajosem?color=1DA1F2&logo=twitter&style=for-the-badge)](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2Festrellajosem&screen_name=estrellajosem)
 
 ## I'm a Father, Developer, and Entrepreneur!!
-
 - 🥅 2020 Goals: Continue to hone my development skills
 
 ### Favorite Framework & Database
@@ -35,5 +27,14 @@
 <br>
 
 ### Other Databases
+
 <img align="left" alt="SQL" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png" />
 <img align="left" alt="MySQL" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png" />
+<br>
+<br>
+
+---
+
+<img align="left" alt="codeSTACKr's GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=estrellajm&count_private=true&show_icons=true&hide_border=true&show_icons=true" />
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=estrellajm&layout=compact&hide_border=true)](https://github.com/estrellajm/github-readme-stats)
