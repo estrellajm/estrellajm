@@ -44,57 +44,43 @@ a question and get an answer out of production data, analytics, and ad spend.
 
 ---
 
+### Shipped and running
+
+**HireMyMotorhome** — a motorhome rental marketplace I designed, built, and still
+operate on my own. Angular front end, NestJS services, Firestore, Cloud Run. Booking
+and payments, host onboarding, fleet and compliance tracking, the analytics pipeline,
+the ad tooling, and the deploy process that puts it in production. Real listings,
+real bookings, real payouts, one person, still running.
+
+---
+
 ### Things I've built
 
-**Platforms for AI**
+**AI Access Gateway** — a control plane that decides what an assistant, agent, or
+automation may do with a client's systems, and produces the evidence that it did only
+that. Every client gets its own credentials, policies, salt, audit chain, and
+deployment identity, so no single trust domain holds the whole book of business.
 
-- **AI Access Gateway** — a control plane that decides what an assistant, agent, or
-  automation may do with a client's systems, and produces the evidence that it did
-  only that. Every client gets its own credentials, policies, salt, audit chain, and
-  deployment identity, so no single trust domain holds the whole book of business.
-- **MCP gateway + forwarders** — the diagram above. Stateless transport, per-tool
-  scope enforcement, and upstream credentials that ride in per-request headers rather
-  than in any service's identity, so no forwarder holds standing access to anything.
-- **founding-docs** — a build system for interdependent documents: a DAG where each
-  node locks decisions that downstream nodes inherit and may not re-litigate. The
-  engine never knows which graph it's running.
-- **unreal-mcp** — a thin layer over Epic's in-editor MCP server that lets a technical
-  artist drive Unreal Engine 5.8 from Claude: build it, see it, and get told when the
-  screenshot doesn't prove what you thought it proved.
-- **Vector** — a desktop copilot that listens to live sales calls, transcribes them,
-  and surfaces what matters while the call is still happening.
+**MCP gateway + forwarders** — the diagram above, running in production across four
+Cloud Run services against GA4, Google Ads, Meta Graph, and Search Console. Stateless
+transport, per-tool scope enforcement, and upstream credentials that ride in
+per-request headers rather than in any service's identity, so no forwarder holds
+standing access to anything.
 
-**Real-time and simulation**
+**Bankfyn** — a white-label, multi-tenant credit card application platform for banks.
+One codebase, many institutions, each with its own branding, rules, and data boundary.
 
-- **Slipstream** — a low-latency engine that streams X-Plane 12 from an Apple Silicon
-  Mac to a Meta Quest 3 with full 6DOF head tracking. Lean forward to read the gauges,
-  look around the glareshield. (Monoscopic — X-Plane's stereo API is Windows-only, and
-  the README says so rather than pretending otherwise.)
-- **Estrella Avionics** — a suite of X-Plane 12 plugins in C++ on the XPLM SDK,
-  bridging the simulator to external hardware (Loupedeck, Arduino/USB CDC) with an
-  in-sim avionics overlay.
+**Slipstream** — a low-latency engine that streams X-Plane 12 from an Apple Silicon Mac
+to a Meta Quest 3 with full 6DOF head tracking. Lean forward to read the gauges, look
+around the glareshield. (Monoscopic — X-Plane's stereo API is Windows-only, and the
+README says so rather than pretending otherwise.)
 
-**Products and libraries**
+**Vector** — a Tauri desktop copilot that listens to live sales calls, transcribes
+them, and surfaces what matters while the call is still happening.
 
-- **[ngsi](https://github.com/estrellajm/ngsi)** — Angular-native, signal-first state
-  management. Actions and decorators like NgRx/NGXS, native signal outputs, zero RxJS
-  in components.
-- **Conduit** — local-first personal finance. Single user, your laptop, your data.
-  NestJS, Angular, Plaid.
-- **[Scrapyard Empires](https://agesofempire.vercel.app)** — a game. Deployed, playable,
-  no install.
-
-<details>
-<summary><b>A marketplace I designed, shipped, and still operate solo</b></summary>
-
-<br>
-
-Angular front end, NestJS services, Firestore, Cloud Run. Booking and payments,
-host onboarding, fleet and compliance tracking, the analytics pipeline, the ad
-tooling, and the deploy process that puts it all in production. Every layer, one
-person, still running.
-
-</details>
+**unreal-mcp** — a layer over Epic's in-editor MCP server that lets a technical artist
+drive Unreal Engine 5.8 from Claude: build it, see it, and get told when the screenshot
+doesn't prove what you thought it proved.
 
 <details>
 <summary><b>What I reach for</b></summary>
