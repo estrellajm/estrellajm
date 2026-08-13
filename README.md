@@ -72,8 +72,9 @@ One codebase, many institutions, each with its own branding, rules, and data bou
 
 **Slipstream** — a low-latency engine that streams X-Plane 12 from an Apple Silicon Mac
 to a Meta Quest 3 with full 6DOF head tracking. Lean forward to read the gauges, look
-around the glareshield. (Monoscopic — X-Plane's stereo API is Windows-only, and the
-README says so rather than pretending otherwise.)
+around the glareshield. Swift on the Mac for capture, a C++ core, Kotlin on the Quest.
+(Monoscopic — X-Plane's stereo API is Windows-only, and the README says so rather than
+pretending otherwise.)
 
 **Vector** — a Tauri desktop copilot that listens to live sales calls, transcribes
 them, and surfaces what matters while the call is still happening.
@@ -87,7 +88,7 @@ doesn't prove what you thought it proved.
 
 <br>
 
-**Languages** — TypeScript, Python, C++, JavaScript, Swift
+**Languages** — TypeScript, Python, C++, Swift, Kotlin, JavaScript
 **Front end** — React, Angular, signals-first state
 **Back end** — Node, NestJS, Express, FastAPI
 **Infra** — GCP (Cloud Run, Firestore, Secret Manager), Docker, Cloud Build
