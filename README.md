@@ -46,13 +46,43 @@ a question and get an answer out of production data, analytics, and ad spend.
 
 ### Things I've built
 
-| | |
-|---|---|
-| **MCP gateway + forwarders** | The diagram above. Stateless transport, per-tool scope enforcement, and upstream credentials that ride in per-request headers rather than in any service's own identity — so no forwarder holds standing access to anything. |
-| **founding-docs** | A build system for interdependent documents: a DAG where each node locks decisions that downstream nodes inherit and may not re-litigate. The engine never knows which graph it's running — strategy chains, requirements chains, and pitch decks are all just different graphs over the same machine. |
-| **unreal-mcp** | A thin layer over Epic's in-editor MCP server that lets a technical artist drive Unreal Engine 5.8 from Claude — build it, see it, and get told when the screenshot doesn't prove what you thought it proved. |
-| **[ngsi](https://github.com/estrellajm/ngsi)** | Angular-native, signal-first state management. Actions and decorators like NgRx/NGXS, native signal outputs, zero RxJS in components. |
-| **[particles](https://github.com/estrellajm/particles)** | React. |
+**Platforms for AI**
+
+- **AI Access Gateway** — a control plane that decides what an assistant, agent, or
+  automation may do with a client's systems, and produces the evidence that it did
+  only that. Every client gets its own credentials, policies, salt, audit chain, and
+  deployment identity, so no single trust domain holds the whole book of business.
+- **MCP gateway + forwarders** — the diagram above. Stateless transport, per-tool
+  scope enforcement, and upstream credentials that ride in per-request headers rather
+  than in any service's identity, so no forwarder holds standing access to anything.
+- **founding-docs** — a build system for interdependent documents: a DAG where each
+  node locks decisions that downstream nodes inherit and may not re-litigate. The
+  engine never knows which graph it's running.
+- **unreal-mcp** — a thin layer over Epic's in-editor MCP server that lets a technical
+  artist drive Unreal Engine 5.8 from Claude: build it, see it, and get told when the
+  screenshot doesn't prove what you thought it proved.
+- **Vector** — a desktop copilot that listens to live sales calls, transcribes them,
+  and surfaces what matters while the call is still happening.
+
+**Real-time and simulation**
+
+- **Slipstream** — a low-latency engine that streams X-Plane 12 from an Apple Silicon
+  Mac to a Meta Quest 3 with full 6DOF head tracking. Lean forward to read the gauges,
+  look around the glareshield. (Monoscopic — X-Plane's stereo API is Windows-only, and
+  the README says so rather than pretending otherwise.)
+- **Estrella Avionics** — a suite of X-Plane 12 plugins in C++ on the XPLM SDK,
+  bridging the simulator to external hardware (Loupedeck, Arduino/USB CDC) with an
+  in-sim avionics overlay.
+
+**Products and libraries**
+
+- **[ngsi](https://github.com/estrellajm/ngsi)** — Angular-native, signal-first state
+  management. Actions and decorators like NgRx/NGXS, native signal outputs, zero RxJS
+  in components.
+- **Conduit** — local-first personal finance. Single user, your laptop, your data.
+  NestJS, Angular, Plaid.
+- **[Scrapyard Empires](https://agesofempire.vercel.app)** — a game. Deployed, playable,
+  no install.
 
 <details>
 <summary><b>A marketplace I designed, shipped, and still operate solo</b></summary>
@@ -71,11 +101,13 @@ person, still running.
 
 <br>
 
-**Languages** — TypeScript, Python, JavaScript
+**Languages** — TypeScript, Python, C++, JavaScript, Swift
 **Front end** — React, Angular, signals-first state
 **Back end** — Node, NestJS, Express, FastAPI
 **Infra** — GCP (Cloud Run, Firestore, Secret Manager), Docker, Cloud Build
 **Protocols** — Model Context Protocol, OAuth 2.1 / OIDC, PKCE, JWT
+**Other** — real-time video streaming, 6DOF head tracking, X-Plane XPLM SDK,
+Unreal Engine, USB/serial hardware bridges
 
 </details>
 
