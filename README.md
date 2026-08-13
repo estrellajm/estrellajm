@@ -1,38 +1,49 @@
-## Hi there, I'm Jose
-[![Twitter Follow](https://img.shields.io/twitter/follow/estrellajosem?color=1DA1F2&logo=twitter&style=for-the-badge)](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2Festrellajosem&screen_name=estrellajosem)
+## Jose Estrella
 
-## I'm a Father, Developer, and Entrepreneur!!
+Full-stack engineer in Denver, CO. I ship the thing that was asked for — then go
+looking for the pattern underneath it and build the primitive that makes the
+next ten requests trivial.
 
-### Favorite Framework & Database
-<img align="left" alt="Angular" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png" />
-<img align="left" alt="Firebase" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png" />
-<br>
+I work best as a team of one: idea, design, backend, frontend, infrastructure,
+and the operational care and feeding afterward.
 
-### Languages & Tools
-<img align="left" alt="Typescript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png" />
-<img align="left" alt="JavaScript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />
-<img align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />
-<img align="left" alt="CSS3" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
-<img align="left" alt="Node.js" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png" />
-<img align="left" alt="Python" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" />
-<br>
-
-### Tools
-<img align="left" alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />
-<img align="left" alt="Git" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" />
-<img align="left" alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />
-<img align="left" alt="Terminal" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png" />
-<img align="left" alt="GraphQL" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/graphql/graphql.png" />
-<br>
-
-### Other Databases
-
-<img align="left" alt="SQL" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png" />
-<img align="left" alt="MySQL" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png" />
-<br>
-<br>
+**Reach for:** TypeScript · Python · Node · React · Angular · NestJS ·
+GCP (Cloud Run, Firestore) · OAuth 2.1 / OIDC · Model Context Protocol
 
 ---
 
+### Things I've built
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=estrellajm&layout=compact&hide_border=true)](https://github.com/estrellajm/github-readme-stats)
+**An MCP gateway and its forwarders**
+Started as one service giving an LLM read access to a production database. Adding
+a second upstream API meant duplicating auth, transport, and tool plumbing — so I
+split it: a gateway that owns the protocol and per-tool authorization, and a
+one-page HTTP contract for downstream services. Google Ads, Meta, and Search
+Console after that were a recipe, not a project. The OAuth 2.1 layer came out as
+an installable package. Non-technical operators now ask questions in plain
+English and get answers from production data, analytics, and ad spend.
+
+**founding-docs**
+A build system for interdependent documents — a DAG where each node locks
+decisions that downstream nodes inherit and may not re-litigate. The engine never
+knows which graph it's running. Business strategy chains, website requirements,
+and pitch decks are all just different graphs over the same machine.
+
+**unreal-mcp**
+A thin layer over Epic's in-editor MCP server that lets a technical artist drive
+Unreal Engine 5.8 from Claude — build it, see it, and get told when the
+screenshot doesn't prove what you thought it proved.
+
+**[ngsi](https://github.com/estrellajm/ngsi)**
+Angular-native, signal-first state management. Actions and decorators like
+NgRx/NGXS, native signal outputs, zero RxJS in components.
+
+**[particles](https://github.com/estrellajm/particles)**
+React.
+
+---
+
+A marketplace platform I designed, shipped, and still operate solo — Angular,
+NestJS, GCP, and the analytics and ad tooling around it.
+
+[twitter](https://twitter.com/estrellajosem)
